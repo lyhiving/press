@@ -1,0 +1,118 @@
+/**
+ * 双飞翼栅格布局 - 平板适配
+ * 注：只考虑 webkit 内核浏览器
+ * @author 邦彦<bangyan@taobao.com>
+ */
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 989px) {
+
+	/* = 标准布局重设
+	----------------------------------------------- */
+	.layout:not(.grid-m) {
+		width: 740px !important;
+		overflow: hidden;
+	}
+
+	/* = 全局样式重设
+	----------------------------------------------- */
+	.grid-s5m0,
+	.grid-m0s5,
+	.grid-s8m0,
+	.grid-m0s8,
+	.grid-s9m0,
+	.grid-m0s9,
+	.grid-s5m0e4,
+	.grid-s5e4m0,
+	.grid-e4m0s5,
+	.grid-e4s5m0,
+	.grid-m0s5e4,
+	.grid-m0e4s5 {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+
+	/* = 两栏上提
+	----------------------------------------------- */
+	.grid-s5m0 .col-main,
+	.grid-s8m0 .col-main,
+	.grid-s9m0 .col-main,
+	.grid-m0s5 .col-main,
+	.grid-m0s8 .col-main,
+	.grid-m0s9 .col-main {
+		float: none;
+		-webkit-box-ordinal-group: 2;
+	}
+
+	.grid-s5m0 .main-wrap,
+	.grid-s8m0 .main-wrap,
+	.grid-s9m0 .main-wrap {
+		margin-left: 0;
+	}
+
+	.grid-m0s5 .main-wrap,
+	.grid-m0s8 .main-wrap,
+	.grid-m0s9 .main-wrap {
+		margin-right: 0;
+	}
+
+	.grid-s5m0 .col-sub,
+	.grid-s8m0 .col-sub,
+	.grid-s9m0 .col-sub,
+	.grid-m0s5 .col-sub,
+	.grid-m0s8 .col-sub,
+	.grid-m0s9 .col-sub {
+		float: none;
+		margin-left: 0;
+		margin-bottom: 10px; /* 往下推开 10 像素 */
+		width: 100%;
+		-webkit-box-ordinal-group: 1;
+	}
+
+	/* = 三栏上提
+	----------------------------------------------- */
+	.grid-s5m0e4 .col-main,
+	.grid-s5e4m0 .col-main,
+	.grid-e4m0s5 .col-main,
+	.grid-e4s5m0 .col-main,
+	.grid-m0s5e4 .col-main,
+	.grid-m0e4s5 .col-main {
+		float: none;
+		height: 0;
+		min-height: 0;
+		-webkit-box-ordinal-group: 2;
+	}
+
+	.grid-s5m0e4 .main-wrap,
+	.grid-s5e4m0 .main-wrap,
+	.grid-e4m0s5 .main-wrap,
+	.grid-e4s5m0 .main-wrap,
+	.grid-m0s5e4 .main-wrap,
+	.grid-m0e4s5 .main-wrap {
+		margin-left: 0;
+		margin-right: 200px;
+	}
+
+	.grid-s5m0e4 .col-sub,
+	.grid-s5e4m0 .col-sub,
+	.grid-e4m0s5 .col-sub,
+	.grid-e4s5m0 .col-sub,
+	.grid-m0s5e4 .col-sub,
+	.grid-m0e4s5 .col-sub {
+		float: none;
+		margin-left: 0;
+		margin-bottom: 10px; /* 往下推开 10 像素 */
+		width: 100%;
+		-webkit-box-ordinal-group: 1;
+	}
+
+	.grid-s5m0e4 .col-extra,
+	.grid-s5e4m0 .col-extra,
+	.grid-e4m0s5 .col-extra,
+	.grid-e4s5m0 .col-extra,
+	.grid-m0s5e4 .col-extra,
+	.grid-m0e4s5 .col-extra {
+		float: none;
+		margin-left: 550px;
+		-webkit-box-ordinal-group: 2;
+	}
+
+}

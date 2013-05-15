@@ -1,0 +1,217 @@
+/**
+ * 预置插件
+ * @author 邦彦<bangyan@taobao.com>
+ */
+/* = 图片热区插件样式
+----------------------------------------------- */
+.press-area {
+	position: relative;
+}
+
+.press-area-item {
+	background-color: rgba(100, 255, 255, 0.5);
+	cursor: default;
+	display: block;
+	position: absolute;
+	min-width: 25px;
+	min-height: 25px;
+}
+
+.press-area-select {
+	background-color: rgba(102, 255, 255, 0.4);
+	display: block;
+	position: absolute;
+	z-index: 2147483647 !important;
+}
+
+.press-area-mask {
+	background-color: rgba(26, 169, 92, 0.4);
+	cursor: crosshair;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2147483647 !important;
+}
+
+.press-area-border {
+	border: 1px solid #000;
+	cursor: move;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.press-area-select .press-area-border {
+	cursor: default;
+}
+
+.press-area-resize {
+	background: #000;
+	cursor: se-resize;
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.press-area-action {
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	width: 24px;
+	text-align: center;
+	padding: 2px 0;
+	position: absolute;
+	top: 0;
+	right: -23px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.press-area-item:hover .press-area-action {
+	visibility: visible;
+	opacity: 1;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.press-area-edit,
+.press-area-remove {
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+}
+
+.press-area-edit i,
+.press-area-remove i {
+	margin: 4px auto;
+}
+
+/* = 图片上传按钮样式
+----------------------------------------------- */
+.press-area-file {
+	background: url(http://img01.taobaocdn.com/tps/i1/T1xGXkXoKzwJOdQE7.-14-12.gif) no-repeat center center;
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+}
+
+.press-area-file input {
+	cursor: pointer;
+	opacity: 0;
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.press-area-admin {
+	background: #1aa95c;
+	width: 198px;
+	height: 26px;
+	padding: 0 5px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2147483647 !important;
+	cursor: default;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.press-module .press-area-admin {
+	visibility: visible;
+	opacity: 1;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.press-area-admin span {
+	cursor: pointer;
+	width: 22px;
+	height: 26px;
+	float: left;
+}
+
+.press-area-admin i {
+	margin: 6px 4px;
+}
+
+.press-area-admin .press-module-add b {
+	border-right-color: #8bd1a4;
+}
+
+.press-area-form {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 194px;
+	padding: 15px 15px 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+	display: none;
+}
+
+.press-area-form .press-form-field {
+	display: block;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.press-area-form .press-form-text {
+	width: 180px;
+}
+
+.press-area-form .press-area-file {
+	position: absolute;
+	top: 7px;
+	right: 5px;
+}
+
+.press-area-form .press-button {
+	float: left;
+	margin-right: 5px;
+}
+
+/* = 预置模块：图片热区选项样式
+----------------------------------------------- */
+.press-area-option-form {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	padding: 20px 30px;
+}
+
+.press-area-option-form .press-form-text {
+	width: 220px;
+}
+
+.press-area-option-file {
+	position: relative;
+	width: 234px;
+}
+
+.press-area-option-file .press-area-file {
+	position: absolute;
+	top: 9px;
+	right: 5px;
+}
+
+.press-area-option-submit {
+	display: none;
+}
