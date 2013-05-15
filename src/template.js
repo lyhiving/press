@@ -357,7 +357,7 @@ press.define(function () {
 			'</span>' +
 			'<form class="press-base press-form press-form-mini press-area-form">' +
 			'	<span class="press-form-field" title="链接">' +
-			'		<input class="press-form-text press-area-field-href" type="url" value="{{href}}" required="required" placeholder="链接">' +
+			'		<input class="press-form-text press-area-field-href" type="text" value="{{href}}" required="required" placeholder="链接">' +
 			'	</span>' +
 			'	<span class="press-form-field" title="打开方式">' +
 			'		<select class="press-form-select press-area-field-target" required="required">' +

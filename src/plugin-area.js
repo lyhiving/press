@@ -190,8 +190,8 @@ press.define(function (require) {
 				img: img || '',
 				bgcolor: bgcolor || '',
 				bgimg: bgimg || '',
-				width: module.width(),
-				height: module.height()
+				width: module.css('width'),
+				height: module.css('height')
 			}
 
 		},
@@ -206,10 +206,10 @@ press.define(function (require) {
 				target: area.attr('target'),
 				title: area.attr('title'),
 				img: area.find('img').attr('src'),
-				left: pos.left,
-				top: pos.top,
-				width: area.width(),
-				height: area.height()
+				left: pos.left + 'px',
+				top: pos.top + 'px',
+				width: area.css('width'),
+				height: area.css('height')
 			};
 
 		},
@@ -265,7 +265,7 @@ press.define(function (require) {
 			return $(mustache.render(template.TEMPLATE_AREA_OPTION, {
 				img: option.img,
 				bgcolor: option.bgcolor.toUpperCase(),
-				bgimg: option.img
+				bgimg: option.bgimg
 			}));
 
 		},

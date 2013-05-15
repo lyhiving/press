@@ -137,7 +137,7 @@
 	left: 0;
 	top: 0;
 	z-index: 2147483647 !important;
-	box-shadow: 0 0 1px #5983d6 inset;
+	box-shadow: 0 0 1px #016 inset;
 	cursor: move;
 	opacity: 0;
 	visibility: hidden;

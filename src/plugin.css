@@ -129,6 +129,11 @@
 	visibility: hidden;
 }
 
+.press-module .press-area {
+	background-color: rgba(26, 169, 92, 0.2);
+	box-shadow: 0 0 1px #080 inset;
+}
+
 .press-module .press-area-admin {
 	visibility: visible;
 	opacity: 1;
